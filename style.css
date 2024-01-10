@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(45deg, #200281, #9004c4);
+	animation: gradient 9s ease infinite;
+  background-size: 250% 250%;
+}
+
+.hide {
+  display: none;
+}
+
+.pageOne {
+  height: 42.4rem;
+  width: 42.8rem;
+  background: #fff;
+  border-radius: .6rem;
+  padding: 4.8rem 6.4rem 6.4rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+  margin: 10rem auto 12.2rem;
+  animation-name: transicao;
+  animation-duration: 0.5s;
+}
+
+.pageTwo {
+  width: 42.8rem;
+  height: 56.4rem;
+  background: #fff;
+  padding: 4.8rem 6.4rem;
+  margin: 3.5rem auto 4.6rem;
+  border-radius: .6rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+  animation-name: transicao;
+  animation-duration: 1s;
+}
+
+.frase {
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+  margin: 1.7rem 0 6rem;
+  padding: 1rem;
+  height: 10.7rem;
+}
+
+.frase p {
+  font-family: 'Dancing Script', sans-serif;
+  font-size: 2.1rem;
+  margin: 0 1rem;
+  text-align: center;
+}
+
+h1, h2 {
+  color: #34355B;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  width: 25rem;
+  margin-left: 2.2rem;
+}
+
+p {
+  color: #34355B;
+
+  font-family: 'DM Sans', sans-serif  ;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 1.4rem 0 2.6rem;
+}
+
+button {
+  width: 17.4rem;
+  height: 5.2rem;
+  border: none;
+  border-radius: 4px;
+  background: #FF9500;
+
+  color: #FFF;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif  ;
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  margin: 5.8rem 6.3rem 0;
+}
+
+#treme:hover {
+  animation-name: treme;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #e08301;
+  width: 17.8rem;
+  height: 5.8rem;
+  margin-left: 6.1rem;
+
+  transition: all 0.2s;
+}
+
+@keyframes treme {
+  0% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -3px;
+  }
+  50% {
+    margin-top: 3px;
+  }
+  75% {
+    margin-left: 3px;
+  }
+  100% {
+    margin-bottom: -2px;
+  }
+}
+
+@keyframes transicao {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
